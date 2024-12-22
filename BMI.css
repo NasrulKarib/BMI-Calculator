@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.bmi {
+    display: flex;
+    gap: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.calculation {
+    padding-left: 40px;
+    padding-right: 40px;
+    background: linear-gradient(135deg, #ff6b6b, #feca57);
+    color: white;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+.height, .weight {
+    margin-bottom: 15px;
+}
+
+.input {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff4757;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #ff6b6b;
+}
+
+.display {
+    padding: 20px;
+    background-color: white;
+}
+
+.score, .guide {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.output {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(to right, #ff6b6b, #ff8e8e);
+    border-radius: 5px;
+    color: white;
+}
+
+h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.guide p {
+    margin: 5px 0;
+    color: #666;
+}

@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="BMI.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
     <title>BMI App</title>
 </head>
 <body>
@@ -13,11 +15,11 @@
             <h1>BMI Calculator</h1>
             <div class="height">
                 <p>Height</p>
-                <input class="input" type = 'number'>
+                <input class="input" type = 'number' placeholder="In cm">
             </div>
             <div class="weight">
                 <p>Weight</p>
-                <input class="input" type = 'number'>
+                <input class="input" type = 'number' placeholder="In kg">
             </div>
             <button class="button">Submit</button>
             
@@ -28,14 +30,34 @@
                 <div class="output">
                     <p>8.89</p>
                 </div>
+                <div class="comment">
+                    <p>You are underweight</p>
+                </div>
             </div>
             <div class="guide">
                 <h2>BMI Weight Guide</h2>
-                <p>Under Weight = Less than 18.9</p>
-                <p>Normal Range = 18.6 and 24.9</p>
-                <p>OverWeight = Greater than 24.9</p>
+                <section class="bmi-scale">
+                    <div style ="--color:var(--underweight)">
+                        <h4>Underweight</h4>
+                        <p> &lt;18.5</p>
+                    </div>
+                    <div style ="--color:var(--normal)">
+                        <h4>Normal</h4>
+                        <p>18.6-24.9</p>  
+                    </div>
+                    <div style ="--color:var(--overweight)">
+                        <h4>Overweight</h4>
+                        <p>25-29.9</p>
+                    </div>
+                    <div style ="--color:var(--obese)">
+                        <h4>Obesity</h4>
+                        <p>&gt;30</p>
+                    </div>
+                </section>
+                
             </div>
         </div>
     </div>
+    <script src="BMI.js"></script>
 </body>
 </html>
